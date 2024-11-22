@@ -1,0 +1,6 @@
+framework module Pods_mqtt_test {
+  umbrella header "Pods-mqtt_test-umbrella.h"
+
+  export *
+  module * { export * }
+}
