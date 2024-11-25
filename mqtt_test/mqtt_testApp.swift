@@ -27,7 +27,7 @@ class IoTManager {
     
     func connectToBroker() -> Bool {
         let clientID = "xcode_dev"
-        let host = "f58a72c5a6fc46ac93cefed6916f36a7.s1.eu.hivemq.cloud"
+        let host = ""
         let port: UInt16 = 8883
         
         mqtt = CocoaMQTT5(
@@ -44,8 +44,8 @@ class IoTManager {
         mqtt.connectProperties = connectProperties
         
 //        mqtt.logLevel = .debug
-        mqtt.username = "Morfinix"
-        mqtt.password = "BrunoPL23"
+        mqtt.username = ""
+        mqtt.password = ""
         mqtt.keepAlive = UInt16(60)
         mqtt.delegate = self
         mqtt.backgroundOnSocket = true
